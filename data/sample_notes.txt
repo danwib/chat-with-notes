@@ -1,0 +1,5 @@
+This is a sample note.
+
+You can drop your own .txt or .pdf files into the data/ folder.
+After running `python src/ingest.py`, the app will embed and index them.
+Then run `python src/chat.py` to ask questions about your notes.
