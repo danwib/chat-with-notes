@@ -1,11 +1,11 @@
 # Chat with Your Notes (LangChain Starter)
 
-A tiny project to learn **LangChain** by building a **chatbot over your local notes** (txt/PDF).  
+A tiny project to learn **LangChain** by building a **chatbot over local notes** (txt/PDF).  
 It covers: loading docs, chunking, embeddings, a vector store (Chroma), retrieval, LLM calls, and basic conversation memory.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1) Create environment & install
 ```bash
@@ -44,7 +44,7 @@ You:
 
 ---
 
-## 🧠 What you’ll learn
+## Features Learned
 - **Document loading** for txt/PDF
 - **Chunking** with `RecursiveCharacterTextSplitter`
 - **Embeddings** via `OpenAIEmbeddings`
@@ -54,21 +54,21 @@ You:
 
 ---
 
-## 🧩 Tech choices & notes
+## Tech choices & notes
 - Uses the **modern LangChain import split** (`langchain`, `langchain_community`, `langchain_openai`).
 - Chroma persists locally to `./db` (safe to delete and re‑run `ingest.py`).
 - Defaults to `gpt-4o-mini` (cheap/fast) — tweak in `src/chat.py`.
 
 ---
 
-## 🔧 Common tweaks
+## Common tweaks
 - Change chunk sizes/overlap in `ingest.py` to suit your docs.
 - Swap `ConversationBufferMemory` for summary or token‑aware memory.
 - Add a minimal web UI (e.g., Streamlit/FastAPI) later.
 
 ---
 
-## 🗃 Repo layout
+## Repo layout
 ```
 chat-with-notes/
 ├── data/                  # Place your notes here (.txt/.pdf)
@@ -84,7 +84,7 @@ chat-with-notes/
 
 ---
 
-## ⚠️ Troubleshooting
+##  Troubleshooting
 - **No docs found**: Ensure files exist in `data/` and re-run `ingest.py`.
 - **Embedding/LLM errors**: Check that `OPENAI_API_KEY` is set.
 - **Import errors**: `pip install -r requirements.txt` again; versions pinned.
