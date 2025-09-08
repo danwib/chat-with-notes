@@ -3,6 +3,8 @@ langchain>=0.2.10
 langchain-community>=0.2.10
 langchain-openai>=0.1.22
 
+langchain-chroma
+
 # Vector DB
 chromadb>=0.5.5
 
